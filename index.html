@@ -1,115 +1,86 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>PRODUCCIÓN DE CARBÓN EN EL DEPARTAMENTO DEL CESAR</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-    body { 
-          font: 12px Helvetica Neue;
-/*          background-color:#faf7f6;*/
-          margin: 0 200px;
-          }
-          
-    .axis path {
-          display: none;
-          }
-
-    .axis line {
-          fill: none;
-          stroke-width: 5px;
-          shape-rendering: crispEdges;
-          }
-
-    .axis{
-          font-size:10px;
-          }
-
-    .group-label {
-          font-size: 9px;
-          font-weight: 200;
-          text-anchor: end;
-          }
-
-
-    span{
-      color:white;
-    }
-
-    form{
-    z-index: -1;
-    }
-
-    .numbers{
-      font-size: 7px;
-      display:none;
-      opacity:1;
-    }
-
-    .number{
-      font-size: 8px;
-      display:none;
-      opacity:0.8;
-    }
-
-    .first{
-    text-shadow: 0 0.5px 0 #fff;
-}
-    .graphic{
-    	max-width:900px;
-
-    }
-
-    #graphic{
-      float:left;
-    }
-
-    #content{
-      width: 900px
-    }
-  </style>
-  
-</head>
-<body style="text-align: center;"> 
-<div id="content">
-  
-
-
-<div class="graphic">
-  <h1>Producción Minera del Cesar</h1>
-  <p class="subtext">La principal actividad económica del Departamento del Cesar es la explotación carbonífera, y su influencia 
-  <br>trasciende a sectores como el medio ambiente, el comportamiento<br> e incluso la salud pública de la región. A continuación puedes analizar la información por: 
-</p>
-  
-  
-
-  <div  id="graphic">
-  
-
-  <div>
-  <p class="subtext"> La producción de carbón durante los últimos doce años en el Cesar ha sido   progresiva.Es de notar, son dos los proyectos mineros dominates.
-  <p/>
-  </div>
-
-  <!-- Add your HTML here! -->
-  <form>
-  <label><input type="radio" name="mode" value="multiples" checked> Proyecto Minero</label>
-  <label><input type="radio" name="mode" value="stacked"> Año</label>
-  </form>
-
-  </div>
-
-  
-</div>
-
-<!-- build:js scripts/main.min.js -->
-<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-
-<script src="main.js"></script>
-<!--<script src="main2.js"></script>
-<!-- endbuild -->
-
-</div>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>PRODUCCIÓN DE CARBÓN EN EL DEPARTAMENTO DEL CESAR</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+         body { 
+         font: 12px Helvetica Neue;
+         /*          background-color:#faf7f6;*/
+         margin: 0 300px;
+         }
+         .axis path {
+         display: none;
+         }
+         .axis line {
+         fill: none;
+         stroke-width: 5px;
+         shape-rendering: crispEdges;
+         }
+         .axis{
+         font-size:10px;
+         }
+         .group-label {
+         font-size: 9px;
+         font-weight: 200;
+         text-anchor: end;
+         }
+         span{
+         color:white;
+         }
+         form{
+         z-index: -1;
+         }
+         .numbers{
+         font-size: 7px;
+         display:none;
+         opacity:1;
+         }
+         .number{
+         font-size: 8px;
+         display:none;
+         opacity:0.8;
+         }
+         .first{
+         text-shadow: 0 0.5px 0 #fff;
+         }
+         .graphic{
+         max-width:900px;
+         }
+         #graphic{
+         float:left;
+         }
+         #content{
+         width: 680px
+         }
+      </style>
+   </head>
+   <body style="text-align:center;">
+      <div id="content">
+         <div class="graphic">
+            <h1>Producción Minera del Cesar</h1>
+            <p class="subtext">La principal actividad económica del Departamento del Cesar es la explotación carbonífera, y su influencia 
+               <br>trasciende a sectores como el medio ambiente, el comportamiento<br> e incluso la salud pública de la región. A continuación puedes analizar la información por: 
+            </p>
+            <div>
+               <p class="subtext"> La producción de carbón durante los últimos doce años en el Cesar ha sido   progresiva.Es de notar, son dos los proyectos mineros dominates.
+               <p/>
+            </div>
+            <div  id="graphic">
+               <!-- Add your HTML here! -->
+               <form>
+                  <label><input type="radio" name="mode" value="multiples" checked> Proyecto Minero</label>
+                  <label><input type="radio" name="mode" value="stacked"> Año</label>
+               </form>
+            </div>
+         </div>
+         <!-- build:js scripts/main.min.js -->
+         <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+         <script src="main.js"></script>
+         <!--<script src="main2.js"></script>
+            <!-- endbuild -->
+      </div>
+   </body>
 </html>
